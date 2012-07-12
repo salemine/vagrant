@@ -173,6 +173,11 @@ module Vagrant
       error_key(:status_error, "vagrant.downloaders.http")
     end
 
+    class DownloaderFTPStatusError < VagrantError
+      status_code(999)
+      error_key(:status_error, "vagrant.downloaders.ftp")
+    end
+
     class EnvironmentNonExistentCWD < VagrantError
       status_code(75)
       error_key(:environment_non_existent_cwd)

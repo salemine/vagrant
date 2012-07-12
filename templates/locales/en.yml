@@ -578,6 +578,10 @@ en:
             Package include file doesn't exist: %{file}
 
     downloaders:
+      ftp:
+        download: "Downloading box: %{url}"
+        status_error: |-
+          Bad status code: %{status}          
       file:
         download: "Copying box to temporary location..."
         file_missing: "The specified path to a file doesn't exist."
